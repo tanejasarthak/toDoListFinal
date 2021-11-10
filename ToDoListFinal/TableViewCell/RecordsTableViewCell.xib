@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecordsTableViewCell" rowHeight="84" id="KGk-i7-Jjw" customClass="RecordsTableViewCell" customModule="ToDoList" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecordsTableViewCell" rowHeight="84" id="KGk-i7-Jjw" customClass="RecordsTableViewCell" customModule="ToDoListFinal" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="378" height="84"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -37,6 +37,9 @@
                         </constraints>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="x.circle" catalog="system"/>
+                        <connections>
+                            <action selector="deleteButtonTap" destination="KGk-i7-Jjw" eventType="touchUpInside" id="afT-cr-EWB"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -50,6 +53,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="itx-gs-nAB" id="L4T-EG-jhg"/>
+                <outlet property="titleLabel" destination="Md1-o2-AaX" id="zBc-vY-whK"/>
+            </connections>
             <point key="canvasLocation" x="178.2608695652174" y="59.598214285714285"/>
         </tableViewCell>
     </objects>
